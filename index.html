@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta charset="utf-8" />
+        <title>Filmzoeker - JS Eindopdrach</title>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,600;1,100;1,400&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+        <script defer src="movies.js"></script>
+        <script defer src="script.js"></script>
+    </head>
+    <!--HEADER-->
+
+    <body>
+        <header class="header">
+
+            <div class="header__logo">
+                <span>MovieFinder</span>
+            </div>
+
+            <nav class="radioFilter">
+
+                <div class="radioFilter__option radioFilter__option--active">
+                    <input type="radio" id="all" name="movieFilter" value="all" checked>
+                    <label for="all">All Movies</label>
+                </div>
+
+                <div class="radioFilter__option">
+                    <input type="radio" id="latest" name="movieFilter" value="latest">
+                    <label for="new">Latest</label>
+                </div>
+
+                <div class="radioFilter__option">
+                    <input type="radio" id="avengers" name="movieFilter" value="avengers">
+                    <label for="avengers">Avengers</label>
+                </div>
+
+                <div class="radioFilter__option">
+                    <input type="radio" id="xmen" name="movieFilter" value="xmen">
+                    <label for="xmen">X-Men</label>
+                </div>
+
+                <div class="radioFilter__option">
+                    <input type="radio" id="princess" name="movieFilter" value="princess">
+                    <label for="princess">Princess</label>
+                </div>
+
+                <div class="radioFilter__option">
+                    <input type="radio" id="batman" name="movieFilter" value="batman">
+                    <label for="batman">Batman</label>
+                </div>
+
+            </nav>
+
+        <div class="header__search">
+            <button type="button" onclick="getInputValue();"><i class="fas fa-search"></i></button>
+            <input id="searchInput" style="text-transform: capitalize;" type="text" id="search" name="search" placeholder="Search..">
+        </div>
+
+        </header>
+
+        <main class="movieContainer">
+            <ul id="movieDisplay">
+
+
+            </ul>
+        </main>
+
+        <footer>
+            <section class="footer-about">
+                <h3>ABOUT</h3>
+                <p>This website was designed and build by</p>
+                <p>Quincy Zinnemers</p>
+            </section>
+
+            <section class="footer-socials">
+                <h3>SOCIALS</h3>
+                <ul class="social-icons">
+                    <li><a href="#" class="socials__blog">
+                            <span class="icon laptop">Check out my blog</span>
+                        </a></li>
+
+                    <li><a href="#" class="socials__twitter">
+                            <span class="icon twitter">Follow me on Twitter</span>
+                        </a></li>
+
+                    <li><a href="#" class="socials__linkedin">
+                            <span class="icon linkedin">Connect on Linkedin</span>
+                        </a></li>
+
+                    <li><a href="#" class="socials__facebook">
+                            <span class="icon facebook">Like my Facebook page</span>
+                        </a></li>
+
+                    <li><a href="#" class="socials__github">
+                            <span class="icon github">See projects on Github</span>
+                        </a></li>
+                </ul>
+            </section>
+
+            <section class="footer-info">
+                <h3>INFO</h3>
+                <p>Copyright ©</p>
+                <p>2020 All Rights Reserved</p>
+            </section>
+        </footer>
+
+
+    </body>
+
+</html>
